@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Stair</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+     body {
+	 font-family: Monospace;
+	 background-color: #222;
+	 margin: 0px;
+	 overflow: hidden;
+     }
+     a {
+	 color: #f80;
+     }
+     #gui { position: relative; top: 0px; left: 0px }
+    </style>
+  </head>
+  <body onload="checkFileAPI();">
+    <script src="js/three.min.js"></script>
+    <script src="js/controls/OrbitControls.js"></script>
+    <script src="js/dat.gui.min.js"></script>
+    <script src="js/lodash.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.csv.js"></script>
+    <script src="js/readfile.js"></script>
+    <table>
+      <tr>
+	<th><div id="WebGLCanvas"></th>
+	<th valign="top"><div id="gui"></th>
+      </tr>
+    </table>
+    <script src="stair.js"></script>
+    <input id="myInput" type="file" style="visibility:hidden" onchange='readText(this)' />    
+  </body>
+</html>
